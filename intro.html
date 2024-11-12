@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jura:wght@300..700&display=swap">
+    <title>DF Realm</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Jura", sans-serif;
+        }
+
+        body {
+            overflow-x: hidden;
+            background: linear-gradient(to bottom, #000000,#439fa1);
+            background: linear-gradient(to top,#000000,#439fa1 );
+            color: #ffffff;
+            font-family: 'Jura', sans-serif;
+        }
+
+        .section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        .header {
+            width: 100%;
+            padding: 10px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+            background: rgba(0, 0, 0, 0.8);
+        }
+
+        .header h1 {
+            font-size: 24px;
+            color: #ffffff;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-family: 'Jura', sans-serif;
+            font-weight: 700;
+        }
+
+        .header:hover {
+            color:#7ea5a6;
+            transform:scale(1.1);
+        }
+
+        .intro-text {
+            text-align: center;
+            font-family: 'Jura', sans-serif;
+            font-size: 24px;
+            margin-top: 80px;
+            padding: 20px;
+            color: #ffffff;
+        }
+
+        .image-container {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            max-width: 800px;
+            width: 100%;
+            margin: 50px auto;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+        }
+
+        .image-container img {
+            width: 100%;
+            display: block;
+            filter: brightness(0.7);
+            display: block;
+        }
+
+        .text-overlay {
+            position: absolute;
+            top: 20%;
+            right: 5%;
+            width: 35%;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.6); 
+            color: #ffffff;
+            border-radius: 8px;
+            text-align: left;
+            font-family: 'Jura', sans-serif;
+        }
+
+
+        .text-overlay h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+            font-weight: bold;
+            line-height: 1.2;
+        }
+
+        .text-overlay p {
+            font-size: 16px;
+            line-height: 1.6;
+            margin: 0;
+        }
+
+        .author {
+            margin: 20px 0;
+            font-size: 60px;
+            color: #ffffff;
+        }
+
+        .what-are-deepfakes h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+            color: #ffffff;
+            font-family: 'Jura', sans-serif;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+        }
+
+        .what-are-deepfakes p {
+            font-size: 18px;
+            max-width: 80%;
+            color: #dddddd;
+        }
+
+        .year-section {
+            font-size: 40px;
+            font-weight: bold;
+            margin: 40px 0;
+            color: #ffffff;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+            opacity: 0.6;
+        }
+
+    
+
+        .threat-section {
+            font-size: 36px;
+            font-weight: bold;
+            margin: 60px 0 20px;
+        }
+
+        .button-container {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: 90px;
+            margin-top: 60px;
+            padding: 20px;
+            z-index: 10;
+            position: relative;
+        }
+
+        .button {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 2px solid #ffffff;
+            font-size: 18px;
+            cursor: pointer;
+            font-family: 'Jura', sans-serif;
+            color: #ffffff;
+            background-color: #333333;
+            transition: background-color 0.3s ease, transform 0.3s;
+        }
+
+        .button:hover {
+            background-color:#7ea5a6;
+            transform:scale(1.1);
+        }
+
+        .text {
+            justify-content: center;
+            font-size: 18px;
+            max-width: 80%;
+            color: #dddddd;
+        }
+
+        .introduction {
+             font-size: 24px;
+            margin-top: 80px;
+            padding: 20px;
+            color: #ffffff
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1><a href="index.html" style ="text-decoration:none; color: inherit;">DF Realm</a></h1>
+    </div>
+
+    <div class="section intro-text">
+        <p>This is story and evolution of Deepfakes...</p>
+    </div>
+
+    <div class="image-container">
+        <img src="images/globehand.jpeg" alt="Deepfake Exploration">
+        <div class="text-overlay">
+            <h2>Deepfake Exploration</h2>
+            <p>This is an immersive exploration into the world of deepfakes and its effect on an individual level. From seemingly innocent entertainment to harmful manipulation, deepfakes have captured global attention, and their influence continues to grow...</p>
+        </div>
+    </div>
+
+
+    <div class="section">
+        <p class="author">Created and Designed by Anusha</p>
+    </div>
+
+    <div class="section what-are-deepfakes">
+        <h2>What are Deepfakes?</h2>
+        <p>Deepfakes, a combination of the words "deep learning" and "fake," are synthetic media in which a person's likeness is replaced with someone else's, creating convincing fake content.</p>
+    </div>
+
+    <div class="section year-section">
+        <p>2017</p>
+        <p>The term came into popular use when a Reddit user created a sub called deepfakes.</p>
+    </div>
+
+    <div class="section">
+        <p class="year-section">5 M</p>
+        <p>Deepfake views in 2019 after US President Obama’s doctored video release.</p>
+    </div>
+
+    <div class="section threat-section">
+        <p>THREAT TO OUR PRIVACY</p>
+    </div>
+
+    <div style="margin-bottom: 100px;"></div>
+
+    <div class="section text">
+        <p>Choose the theme of the story you want to explore</p>
+    </div>
+
+    <div class="section button-container">
+        <div class="button" onclick="goToRevenge()">Revenge</div>
+        <div class="button"onclick="goToScam()">Scam</div>
+    </div>
+
+
+    <script>
+        function goToRevenge(){
+            window.location.href = 'revenge.html';
+        }
+
+        function goToScam(){
+            window.location.href = 'scam.html';
+        }
+    </script>
+
+    
+
+
+</body>
+</html>

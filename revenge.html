@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jura:wght@300..700&display=swap">
+	<title>DF Realm</title>
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+			font-family: 'Jura', sans-serif;
+		}
+
+		body {
+			overflow-x: hidden;   /* specifies to clip content on the left and right edges*/
+			padding-top: 60px;
+			background: linear-gradient(to bottom, #000000,#439fa1,#000000,#439fa1,#000000);
+            color: #ffffff;
+            font-family: 'Jura', sans-serif;
+		}
+
+		.section {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			padding: 50px 20 px;
+			text-align: center;
+		}
+
+		.main-section {
+			position: relative;
+			width: 100%;
+			height: 100vh;
+			background: url('images/anotherbody.jpg');
+			background-size: cover;
+			background-repeat: no-repeat;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+
+		.section1{
+			background-image: url('images/sad.jpg');
+		}
+		.section2{
+			background-image: url('images/victims.gif');
+		}
+		.section3{
+			background-image: url('images/distort.gif');
+			background-size: contain;
+			background-position: center;
+		}
+		.section4{
+			background-image: url('images/digitalpriv.gif');
+			background-size: contain;
+			background-position: center;
+		}
+
+		.overlay {
+			background: rgba(0, 0, 0, 0.4);
+			padding-right: 20px;
+			text-align: right;
+			border-radius: 10px;
+			margin-right: 20px;
+		}
+
+		.header {
+			width: 100%;
+			padding: 10px;
+			position: fixed;
+			top: 0;
+			left: 0;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			z-index: 1000;
+			background: rgba(0, 0, 0, 0.8);
+		}
+
+		.header h1 {
+			font-size: 24 px;
+			color: #ffffff;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-family: 'Jura', sans-serif;
+            font-weight: 700;
+		}
+
+		.intro-text {
+			font-size: 18 px;
+			/*margin-top: 80 px;*/
+			padding-right: 18px;
+			color: #ffffff;
+			margin-top: 18px;
+		}
+
+		.scroll {
+			position: absolute;
+			bottom: 20px;
+			left: 50%;
+			transform: translateX(-50%);
+			font-size: 13px;
+			color: #ffffff;
+			animation: bounce 1s infinite;
+			text-align: center;
+		}
+
+		@keyframes bounce {
+			0%, 100% { transform: translateY(0); }
+			50% { transform:translateY(-10px); }
+		}
+
+		.text1{
+			padding-top: 20px;
+			margin-top: 20 px;
+			font-size: 17px;
+			color: #ffffff;
+		}
+
+		.text2{
+			margin-top: 20px;
+			font-size: 17px;
+			color: #ffffff;
+		}
+
+		.text3{
+			margin-top: 20px;
+			font-size: 17px;
+			color: #ffffff;
+		}
+
+		.image3{
+			max-width: 60%;
+			height: auto;
+			margin-top: 40px;
+		}
+
+		.text4{
+			margin-top: 20px;
+			font-size: 17px;
+		}
+
+		.victims{
+			margin-top: 20px;
+			font-size: 17px;
+			color: #ffffff;
+		}
+
+		.text5{
+			margin-left: 20px;
+			font-size: 17px;
+			color: #ffffff;
+		}
+
+		.conclusion{
+			float: left;
+			text-align: right;
+			margin-right: 20px;
+			font-size: 22px;
+			color: #ffffff;
+		}
+
+		.text6{
+			margin-top: 20px;
+			font-size: 17px;
+			color: #ffffff;
+		}
+
+		.text7{
+			margin-right: 20px;
+			font-size: 17px;
+			color: #ffffff;
+		}
+
+		.button-container{
+			display: flex;
+			justify-content: center;
+			margin: 40px;
+		}
+
+		.back {
+			position: fixed;
+            top: 20px; 
+            left: 20px;     
+            font-size: 18px;   
+            color: #ffffff !important;    
+            text-decoration: none;
+            background-color: rgba(0, 0, 0, 0.6); 
+            padding: 10px;
+            border-radius: 5px;
+            z-index: 1000;     
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+		}
+
+		.back:hover {
+			background-color: rgba(0, 0, 0, 0.6);
+			color:#7ea5a6;
+		}
+
+		.button{
+			width: 80px;
+			height: 80px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			font-size: 10px;
+			cursor: pointer;
+		}
+
+		.button:hover {
+            background-color: #919090;
+            transform:scale(1.1);
+
+
+	</style>
+</head>
+<body>
+	<div class="header">
+		<h1><a href="index.html" style ="text-decoration:none; color: inherit;">DF Realm</a></h1>
+	</div>
+
+	<a href="javascript:history.back()"class="back-arrow">← Back</a>
+
+	<div class="main-section">
+		<div class="overlay">
+			<p class="intro-text">This is a true story of a college student who discovered inappropriate videos of herself on the internet.</p>
+		<p class="intro-text">But it was not her, it just looked like her....</p>
+	</div>
+</div>
+    
+		<div class="scroll">Scroll down<br> <span></span>
+		</div>
+	<br>
+	<br>
+	<br>
+	<br>
+
+	<div class="section text1">
+		<p>Taylor Klein, a college student who discovers her face manipulated ontoexplicit videos online, without her consent. These videos appear to be the real Taylor in compromising situations. This appalling revelation leads her through a journey of justice and how such an invasion of privacy could happen so easily.</p>
+		<br>
+		<br>
+		<div style="display: flex; gap: 50px; justify-content: center;">
+		<img src="images/msg1.jpg" alt="first message" style="width: 80%; max-width: 500px; height: auto;">
+		<img src="images/msg2.jpg" alt="second message" style="width: 80%; max-width: 500px; height: auto;">
+    </div>
+</div>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+     
+     <div class="section main-section section1">
+     	<div class="overlay">
+     		<div class="section text2">
+    	<p>Turning to authorities for justice, she finds out that there is little to no protection for these types of cases.Law enforcements seem ill-equipped to handle such type of sensitive cases....</p>
+    	    <div class="section text3">
+    	<p>Alongside her struggle for justice, Taylor faces emotional distress as she tries to navigate the social stigma, personal trauma, and fear associated with these deepfake images.</p>
+    </div>
+</div>
+</div>
+</div>
+
+    
+
+    <div class="section main-section section3">
+     	<div class="overlay">
+    <div class="section text4">
+    	<p>As she digs deeper, Taylor with the help of friends, digital rights activists, and tech experts finds out about the disturbing world of non-consensual deepfakes. They reveal that the technology is widely accessible and that the creation of these images requires little skill, making it virtually easy for anyone to produce realistic manipulations. This widespread accessibility raises alarms about privacy and the ethical implications of deepfake technology.</p>
+    </div>
+</div>
+</div>
+
+    	
+    <div class="section main-section section2">
+     	<div class="overlay">
+    	<div class="section victims">
+    		<p>From 2022-2023, there was a surge in creating deepfake pornography, rising by over 460%.</p>
+    		<br>
+    		<br>
+    		<p>In 2021, there were around 14,000 deepfake videos circulating online.
+    		</p>
+    	</div>
+    </div>
+</div>
+
+<br>
+<br>
+<br>
+<br>
+
+    	<div class="text5">
+    			<div style="display: flex; gap: 50px; float: left;">
+		<img src="images/stronger.gif" alt="first message" style="width: 90%; max-width: 500px; height: auto;">
+    		<p>Taylor realises she is not alone in this struggle. She connects with other women whose lives have also been disturbed by deepfake victims, creating a broader perspective on the widespread and unregulated use of this technology. This emphasises the challenges victims face and the personal costs they endure-stigma, career implications and mental heath struggles.</p>
+    	</div>
+    </div>
+
+    <div class="section main-section section4">
+     	<div class="overlay">
+    	<div class="section text6">
+    		<p>She begins to advocate for digital rights and privacy becoming a voice for others affected by deepfake abuse.</p>
+    	</div>
+    </div>
+</div>
+
+ 
+    	<div class="section conclusion">
+    		<p>Conclusion:</p>
+    	</div>
+
+    	<br>
+    	<br>
+    	<br>
+
+    	<div class="section text7">
+    		<p>While deepfake technology has the potential for positice applications, its current misuse highlights a dark side that must be addresses to protect personal privacy and dignity.</p>
+
+    	<div class="section button-container">
+    		<div class="button" onclick="GoToHome()">Home</div>
+    	</div>
+
+    	<script>
+    		function GoToHome(){
+    			window.location.href = 'index.html'
+    		}
+    	</script>
+
+
+
+
+</body>
+</html>

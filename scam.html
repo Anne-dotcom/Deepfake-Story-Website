@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jura:wght@300..700&display=swap">
+	<title>DF Realm</title>
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+			font-family: 'Jura', sans-serif;
+		}
+
+		body {
+			overflow-x: hidden; /* specifies to clip content on the left and right edges */
+			padding-top: 60px;
+			background-color: #000000;
+			color: #ffffff;
+		}
+
+		.header {
+			width: 100%;
+			padding: 10px;
+			position: fixed;
+			top: 0;
+			left: 0;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			z-index: 1000;
+			background: rgba(0, 0, 0, 0.8);
+		}
+
+		.header h1 {
+			font-size: 24px;
+			color: #ffffff;
+			text-transform: uppercase;
+			letter-spacing: 2px;
+			font-weight: 700;
+		}
+
+		.section {
+			display: flex;
+			flex-direction: column;
+			text-align: center;
+			padding: 30px 20px;
+		}
+
+		.main-section {
+			position: relative;
+			width: 100%;
+			height: 100vh;
+			background: url('images/fraud.gif');
+			background-size: contain;
+			background-repeat: no-repeat;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+
+		.section1{
+			width: 100%;
+			background-size: cover;
+			background-position: center;
+		}
+		.section2{
+			width: 100%;
+			background: url(images/time.jpg);
+			background-size: cover;
+			background-position: center;
+			opacity: 0.8;
+		}
+		.section3{
+			width: 100%;
+			background-size: cover;
+			background-position: center;
+		}
+		.section4{
+			width: 100%;
+			background-size: cover;
+			background-position: center;
+		}
+
+		.overlay {
+			background: rgba(0, 0, 0, 0.4);
+			padding-right: 20px;
+			text-align: right;
+			border-radius: 10px;
+			margin-right: 20px;
+		}
+
+		.intro-text {
+			font-size: 18px;
+			color: #ffffff;
+			margin-top: 18px;
+		}
+
+		.scroll {
+			position: absolute;
+			bottom: 90px;
+			left: 50%;
+			transform: translateX(-50%);
+			font-size: 13px;
+			color: #ffffff;
+			animation: bounce 1s infinite;
+			text-align: center;
+		}
+
+		@keyframes bounce {
+			0%, 100% { transform: translateY(0); }
+			50% { transform: translateY(-10px); }
+		}
+
+		.text1, .text2, .text3, .text4, .text5 {
+			font-size: 17px;
+			color: #ffffff;
+			margin-top: 20px;
+		}
+
+		.conclusion {
+			float: left;
+			text-align: right;
+			margin-right: 20px;
+			font-size: 22px;
+			color: #ffffff;
+		}
+
+		.back {
+			position: fixed;
+			top: 20px; 
+			left: 20px;     
+			font-size: 18px;   
+			color: #ffffff !important;    
+			text-decoration: none;
+			background-color: rgba(0, 0, 0, 0.6); 
+			padding: 10px;
+			border-radius: 5px;
+			z-index: 1000;     
+			cursor: pointer;
+			transition: background-color 0.3s ease;
+		}
+
+		.back:hover {
+			background-color: rgba(0, 0, 0, 0.6);
+			color: #7ea5a6;
+		}
+
+		.button-container {
+			display: flex;
+			justify-content: center;
+			margin: 40px;
+		}
+
+		.button {
+			width: 80px;
+			height: 80px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			font-size: 10px;
+			cursor: pointer;
+		}
+
+		.button:hover {
+			background-color: #919090;
+			transform: scale(1.1);
+		}
+
+		.vertical-stack {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			width: 100%; /* Ensure it takes the full width */
+		}
+
+		.vertical-stack img {
+			max-width: 100%; /* Ensure image does not overflow */
+			height: auto;
+		}
+	</style>
+</head>
+<body>
+	<div class="header">
+		<h1><a href="index.html" style="text-decoration: none; color: inherit;">DF Realm</a></h1>
+	</div>
+
+	<a href="javascript:history.back()"class="back-arrow">← Back</a>
+
+	<div class="section">
+		<div style="display: flex; gap: 50px; justify-content: center;">
+			<img src="images/fraud.gif" alt="siren" style="width: 90%; max-width: 500px; height: auto;">
+			<div class="section intro-text">
+				<p>The story of a man who was conned into thinking that his friend called him for money...</p>
+				<p>Turns out it was a DEEPFAKE!</p>
+			</div>
+		</div>
+	</div>
+
+	<div class="scroll">Scroll down</div>
+
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+
+	<div class="section text1">
+		<div class="vertical-stack">
+		<img src="images/news.jpg" alt="news" style="width: 80%; max-width: 900px; height: auto;">
+		<br>
+		<br>
+			<p>The increasing amounts of news, talking about how people were scammed by deepfake technology is ever increasing. There are multiple money laundering scams taking place by manipulating and acting like loved ones or known people.</p>
+		</div>
+	</div>
+
+	<div class="section text2">
+		<p>A 73 year-old man in India fell victim to a deepfake scam after receiving a call from someone impersonating his former colleague and asking for money.</p>
+	</div>
+
+	<div class="section main-section section2">
+		<div class="overlay">
+			<div class="section text3">
+				<p>KOCHI: It was around 5:45 am on July 9th that PS Radhakrishnan, a resident of Kozhikode in Kerala, first received a call from an anonymous number.</p>
+			</div>
+		</div>
+	</div>
+
+			<div class="section text4">
+				<div style="display: flex; gap: 50px; float: right;">
+		<img src="images/whatsapp.gif" alt="first message" style="width: 90%; max-width: 500px; height: auto;">
+				<p>Few minutes later, after ignoring it, he receives a WhatsApp call. The man on the other end said that he was currently at the Dubai airport, waiting to board a flight to India. He had called to ask for a financial favor.</p>
+			</div>
+		</div>
+
+			<div class="section text5">
+				<div class="vertical-stack">
+		<img src="images/money.jpg" alt="news" style="width: 80%; max-width: 900px; height: auto;">
+		<br>
+		<br>
+				<p>His sister-in-law was being prepped for an emergency surgery at a hospital in Mumbai, and a sum of ₹40,000 had to be paid urgently as an advance. He said the money had to be transferred via UPI to the phone of someone with her at the Mumbai hospital.</p>
+			</div>
+		</div>
+	</div>
+
+	<div class="section button-container">
+		<div class="button" onclick="GoToHome()">Home</div>
+	</div>
+
+	<script>
+		function GoToHome(){
+			window.location.href = 'index.html';
+		}
+	</script>
+</body>
+</html>
