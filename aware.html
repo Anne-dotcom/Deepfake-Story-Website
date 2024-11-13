@@ -25,7 +25,7 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            padding: 50px 20px;
+            padding: 80px 20px;
             text-align: center;
         }
 
@@ -126,13 +126,6 @@
             50% { transform:translateY(-10px); }
         }
 
-        .author {
-            margin: 20px 0;
-            font-size: 60px;
-            color: #ffffff;
-            text-shadow: 4px 4px 8px rgba(0,0,0,0.7);
-        }
-
         .what-are-deepfakes h2 {
             font-size: 36px;
             margin-bottom: 20px;
@@ -205,7 +198,7 @@
 
         .button2 {
             width: 200px;
-            height: 50px;
+            height: 100px;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -223,7 +216,7 @@
         }
 
         .text {
-            font-size: 18px;
+            font-size: 23px;
             text-align: center;
             max-width: 100%;
             color: #dddddd;
@@ -241,105 +234,44 @@
     <div class="header">
         <h1><a href="index.html" style ="text-decoration:none; color: inherit;">DF Realm</a></h1>
     </div>
-    
 
-    <div class="image-container">
-        <img src="images/globehand.jpeg" alt="Deepfake Exploration">
-        <div class="text-overlay">
-            <h2>Deepfake Exploration</h2>
-            <p>This is an immersive exploration into the world of deepfakes and its effect on an individual level. From seemingly innocent entertainment to harmful manipulation, deepfakes have captured global attention, and their influence continues to grow...</p>
+        <div class="section">
+            <h1>Counter Measures to spread Awareness</h1>
+            <br>
+            <br>
+            <p>As of now, there are little no help regarding the deepfake issue.</p>
+            <br>
+            <br>
+            <p>But, there are a few things that can help comabt the deepfake issue.</p>
         </div>
     </div>
-
-     <div class="scroll">Scroll down<br> <span></span>
-        </div>
 
 
     <div class="section">
-        <p class="author">Created and Designed by Anusha</p>
-    </div>
-
-    
-    <div class="image-container">
-        <img src="images/ai.gif" alt="aigif">
-        <div class="text-overlay">
-       <div class="section what-are-deepfakes">
-        <h1>What are Deepfakes?</h1>
-        <p>Deepfakes, a combination of the words "deep learning" and "fake," are synthetic media in which a person's likeness is replaced with someone else's, creating convincing fake content.</p>
-    </div>
-</div>
-    </div>
-
-    <div class="section year-section">
-        <div style="font-size: 250px;">
-        <p>2  0  1  7</p>
-    </div>
-        <p>The term came into popular use when a Reddit user created a sub called deepfakes.</p>
-        <div style="width:20px;">
-        <img src="images/reddit-logo.png" alt="reddit-logo" >
-    </div>
+        <h1 class="text">Legislative Measures</h1>
+        <br>
+        <br>
+        <p>Deepfake’s legal standing is tricky and changing. This harmful content is not outlawed but can breach the law.</p>
+        <br>
+        <p>The tricky part is that current laws weren’t made with deepfakes in mind. This makes it hard to tackle their unique problems.</p>
+        <br>
+        <p>Some laws that could help:
+            <ul>- Privacy Laws</ul>
+            <ul>- Intellectual Property Rights</ul>
+            <ul>- Defamation and Harrassment Laws</ul>
+        </p>
     </div>
 
     <div class="section">
-        <div class="year-section">
-            <div style="font-size: 150px;">
-        <p>5 M</p>
-    </div>
-    </div>
-    <div style="float: left;">
-    <img src="images/count.gif" alt="viewcount">
-</div>
-        <div class="image-container">
-        <img src="images/obama.gif" alt="Deepfake Exploration">
-        </div>
+        <h1 class="text">Technological Measures</h1>
         <br>
         <br>
-        <div style="font-size: 30px;">
-        <p>Views for this deepfake video of US President Obama created by Jordan Peele sky rocketed in 2019.
-        This was created as a warning regarding the increasing widespread and accessability of deepfake creation. </p>
-    </div>
-
-
-    <div class="section threat-section">
-        <div style="font-size: 100px">
-        <p>THREAT TO OUR PRIVACY</p>
+        <p>There are many AI and Deepfake detector tools that can help one identify the legitimacy of a video or audio.</p>
         <br>
-        <div style="background-blend-mode: lighten;">
-        <img src="images/eyes.gif" alt="eyedark">
+        <p>The 'Video Authenticator Tool' launched by Microsoft in 2020, detects the amalgamtion boundary of deepfakes.</p>
+        <br>
+        <p>Recurrent Convolutional Models (RCMs) uses temporal information from images streams across domains and then detects face manipulation in videos. It can detect any type of facial manipulation in a video.</p>
     </div>
-    </div>
-</div>
-
-    <div style="margin-bottom: 100px;"></div>
-
-    <div class="section text">
-        <p>Choose the theme of the story you want to explore</p>
-    </div>
-
-    <div class="section button-container">
-        <div class="button" onclick="goToRevenge()">Revenge</div>
-        <div class="button"onclick="goToScam()">Scam</div>
-    </div>
-
-    <div class="section button-container">
-        <div class="button2" onclick="goToAwareness()">Awareness</div>
-
-
-    <script>
-        function goToRevenge(){
-            window.location.href = 'revenge.html';
-        }
-
-        function goToScam(){
-            window.location.href = 'scam.html';
-        }
-        function goToAwareness(){
-            window.location.href = 'aware.html'
-        }
-    </script>
-
-    
-
 
 </body>
 </html>
